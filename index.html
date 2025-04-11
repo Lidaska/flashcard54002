@@ -53,11 +53,19 @@
       background-color: white;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
       font-size: 22px;
+      padding: 10px;
+      box-sizing: border-box;
+      flex-direction: column;
     }
 
     .back {
       transform: rotateY(180deg);
       background-color: #bbdefb;
+    }
+
+    .back img {
+      max-width: 60px;
+      margin-top: 5px;
     }
 
     .footer {
@@ -74,11 +82,32 @@
 
   <script>
     const data = {
-      A: "Ant", B: "Bat", C: "Cow", D: "Deer", E: "Eagle",
-      F: "Frog", G: "Giraffe", H: "Horse", I: "Ink", J: "Jam",
-      K: "Key", L: "Leaf", M: "Mouse", N: "Nail", O: "Orange",
-      P: "Pen", Q: "Quill", R: "Ring", S: "Snake", T: "Tree",
-      U: "Urn", V: "Van", W: "Wolf", X: "X-ray", Y: "Yolk", Z: "Zip"
+      A: ["Apple", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"],
+      B: ["Ball", "https://upload.wikimedia.org/wikipedia/commons/e/e3/Soccer_ball.svg"],
+      C: ["Cat", "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"],
+      D: ["Dog", "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dog_head.jpg"],
+      E: ["Elephant", "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"],
+      F: ["Fish", "https://upload.wikimedia.org/wikipedia/commons/1/18/Fish_marine_aquarium.jpg"],
+      G: ["Giraffe", "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"],
+      H: ["Hat", "https://upload.wikimedia.org/wikipedia/commons/4/45/Sombrero_gallego.jpg"],
+      I: ["Igloo", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Igloo_Patagonia.jpg"],
+      J: ["Jug", "https://upload.wikimedia.org/wikipedia/commons/b/b2/Glass_water_jug.jpg"],
+      K: ["Kite", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kite_in_flight.jpg"],
+      L: ["Lion", "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"],
+      M: ["Monkey", "https://upload.wikimedia.org/wikipedia/commons/f/f7/Monkey_%28Macaca_fascicularis%29_in_Ubud.jpg"],
+      N: ["Nest", "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bird_nest_in_tree.jpg"],
+      O: ["Owl", "https://upload.wikimedia.org/wikipedia/commons/4/45/Athene_noctua_%28cropped%29.jpg"],
+      P: ["Parrot", "https://upload.wikimedia.org/wikipedia/commons/f/f7/Ara_ararauna_Luc_Viatour.jpg"],
+      Q: ["Queen", "https://upload.wikimedia.org/wikipedia/commons/6/6a/Chess_qdt45.svg"],
+      R: ["Rabbit", "https://upload.wikimedia.org/wikipedia/commons/7/70/Rabbit_in_montana.jpg"],
+      S: ["Sun", "https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg"],
+      T: ["Tiger", "https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg"],
+      U: ["Umbrella", "https://upload.wikimedia.org/wikipedia/commons/b/b6/Red_umbrella.jpg"],
+      V: ["Violin", "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png"],
+      W: ["Watch", "https://upload.wikimedia.org/wikipedia/commons/7/74/Wrist_watch.jpg"],
+      X: ["Xylophone", "https://upload.wikimedia.org/wikipedia/commons/3/35/Xylophone.jpg"],
+      Y: ["Yak", "https://upload.wikimedia.org/wikipedia/commons/f/f2/Yak_in_Ladakh.jpg"],
+      Z: ["Zebra", "https://upload.wikimedia.org/wikipedia/commons/0/0f/Plains_Zebra_Equus_quagga.jpg"]
     };
 
     const grid = document.getElementById("grid");
@@ -89,7 +118,10 @@
       wrapper.innerHTML = `
         <div class="card">
           <div class="front">${letter}</div>
-          <div class="back">${data[letter]}</div>
+          <div class="back">
+            ${data[letter][0]}<br>
+            <img src="${data[letter][1]}" alt="${data[letter][0]}">
+          </div>
         </div>`;
 
       wrapper.onclick = () => wrapper.classList.toggle("flipped");
