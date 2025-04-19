@@ -78,36 +78,36 @@
 <body>
   <h2>Alphabet Flip Cards</h2>
   <div class="grid" id="grid"></div>
-  <div class="footer">Roll No: 54002 | FYBSc Data Science</div>
+  <div class="footer">Roll No: 54002 | FYBSC Data Science</div>
 
   <script>
     const data = {
       A: ["Apple", "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"],
-      B: ["Ball", "https://upload.wikimedia.org/wikipedia/commons/e/e3/Soccer_ball.svg"],
-      C: ["Cat", "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg"],
-      D: ["Dog", "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dog_head.jpg"],
-      E: ["Elephant", "https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"],
-      F: ["Fish", "https://upload.wikimedia.org/wikipedia/commons/1/18/Fish_marine_aquarium.jpg"],
+      B: ["Ball", "https://cdn.pixabay.com/photo/2013/07/13/09/46/basketball-155997_1280.png"],
+      C: ["Cat", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxCUR6hD1YngotLQvd0I-5GHb5_9Y7Uy3gA&s"],
+      D: ["Dog", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHptC2gUsoa5sjScAg1hNUran5wfGWbqAfqg&s"],
+      E: ["Elephant", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm9JZD6xIeB013wCAk5ikjRQ4fu6-Gy4F5yw&s"],
+      F: ["Fish", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGtSGsKAEtuN3rPjQIU9XZResosTTWPy-Ujg&s"],
       G: ["Giraffe", "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"],
-      H: ["Hat", "https://upload.wikimedia.org/wikipedia/commons/4/45/Sombrero_gallego.jpg"],
-      I: ["Igloo", "https://upload.wikimedia.org/wikipedia/commons/e/e1/Igloo_Patagonia.jpg"],
-      J: ["Jug", "https://upload.wikimedia.org/wikipedia/commons/b/b2/Glass_water_jug.jpg"],
-      K: ["Kite", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kite_in_flight.jpg"],
+      H: ["Hat", "https://t3.ftcdn.net/jpg/00/15/10/90/360_F_15109044_ArxhhCPA08qvXWUB6221awQXzVk5qLXr.jpg"],
+      I: ["Igloo", "https://media.istockphoto.com/id/887323060/photo/real-igloo-and-sun.jpg?s=612x612&w=0&k=20&c=gxT0GB7ob9fPxtznzWvlcstiqqRhUqDeem1-bKXWBos="],
+      J: ["Jug", "https://t4.ftcdn.net/jpg/00/22/65/77/360_F_22657759_GNVD6ZeS8kxfO6W4tWNncAPGzStk0oQ6.jpg"],
+      K: ["Kite", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDu0YXwAJd6EteICcO8UrFqNmCtb-VrFQQKA&s"],
       L: ["Lion", "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"],
-      M: ["Monkey", "https://upload.wikimedia.org/wikipedia/commons/f/f7/Monkey_%28Macaca_fascicularis%29_in_Ubud.jpg"],
-      N: ["Nest", "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bird_nest_in_tree.jpg"],
-      O: ["Owl", "https://upload.wikimedia.org/wikipedia/commons/4/45/Athene_noctua_%28cropped%29.jpg"],
-      P: ["Parrot", "https://upload.wikimedia.org/wikipedia/commons/f/f7/Ara_ararauna_Luc_Viatour.jpg"],
-      Q: ["Queen", "https://upload.wikimedia.org/wikipedia/commons/6/6a/Chess_qdt45.svg"],
-      R: ["Rabbit", "https://upload.wikimedia.org/wikipedia/commons/7/70/Rabbit_in_montana.jpg"],
+      M: ["Monkey", "https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg"],
+      N: ["Nest", "https://media.istockphoto.com/id/1353250805/photo/empty-birds-nest.jpg?s=612x612&w=0&k=20&c=jB9lNLVcEmdT3eh3YR9kTDcfxKiOMjiM4-q12PB3PtA="],
+      O: ["Owl", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm322GyTH7J2ENgTDL7Tdi3nJRRiAXNgYo2Q&s"],
+      P: ["Parrot", "https://m.media-amazon.com/images/I/715qeqCG4OL._AC_UF894,1000_QL80_.jpg"],
+      Q: ["Queen", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUIQv-ehd-4MKizlFLRsAq4tkDEPcQXg7NA&s"],
+      R: ["Rabbit", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKwZaUf26yn6JFREGWlzyEPumeXoKUidiUw&s"],
       S: ["Sun", "https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg"],
       T: ["Tiger", "https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg"],
-      U: ["Umbrella", "https://upload.wikimedia.org/wikipedia/commons/b/b6/Red_umbrella.jpg"],
+      U: ["Umbrella", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfai4xmM6Yd9LX4YrdYhGrvRUcz1divyDRmQ&s"],
       V: ["Violin", "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png"],
-      W: ["Watch", "https://upload.wikimedia.org/wikipedia/commons/7/74/Wrist_watch.jpg"],
-      X: ["Xylophone", "https://upload.wikimedia.org/wikipedia/commons/3/35/Xylophone.jpg"],
-      Y: ["Yak", "https://upload.wikimedia.org/wikipedia/commons/f/f2/Yak_in_Ladakh.jpg"],
-      Z: ["Zebra", "https://upload.wikimedia.org/wikipedia/commons/0/0f/Plains_Zebra_Equus_quagga.jpg"]
+      W: ["Watch", "https://m.media-amazon.com/images/I/61IduqXygwL._AC_UY350_.jpg"],
+      X: ["Xylophone", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROe4A9Lc0gwr4Qp77UZA6UJXJZq9Osh31R9w&s"],
+      Y: ["Yak", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUnKPTKe3pDs9kFaTZ_tq2eNasNAV2oCDVbQ&s"],
+      Z: ["Zebra", "https://upload.wikimedia.org/wikipedia/commons/9/96/Plains_Zebra_Equus_quagga_cropped.jpg"]
     };
 
     const grid = document.getElementById("grid");
